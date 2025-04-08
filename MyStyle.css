@@ -1,22 +1,102 @@
-a {
-  font: Courier;
-  font: 14px Courier;
-  text-decoration: none;
-  color: rgb(225, 167, 20);
-  padding: 0px 5px 0px 5px;
-  border-right: 2px solid white;
+/* Farbvariablen */
+:root {
+  --primary-color: #28a745;
+  --secondary-color: #f4f4f4;
+  --text-color: #333;
+  --background-color: #fff;
 }
 
-.mainNav {
-  height: 30px;
-  background: rgb(139, 0, 139);
-  padding-top: 7px;
-  padding-left: 5px;
-  margin-top: 20px;
-  box-shadow: 4px 6px grey;
-  overflow: hidden;
+/* Allgemeines Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
 }
-p {
-  font-family: "Akronim", cursive;
-  font-size: 5em;
+
+/* Header */
+header {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Hauptbereich */
+main {
+  max-width: 600px;
+  margin: 20px auto;
+  background: var(--background-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Formular */
+.entry-form {
+  margin-bottom: 20px;
+}
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Button mit Hover-Effekt */
+button {
+  background: var(--primary-color);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease-in-out;
+}
+button:hover {
+  background: #218838;
+}
+
+/* Einträge */
+.entries {
+  margin-top: 20px;
+}
+.entry {
+  background: var(--background-color);
+  padding: 10px;
+  margin: 10px 0;
+  border-left: 5px solid var(--primary-color);
+  border-radius: 5px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  margin-top: 20px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsives Design */
+@media (max-width: 600px) {
+  main {
+      width: 90%;
+      padding: 15px;
+  }
 }

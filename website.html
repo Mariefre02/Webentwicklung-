@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein Gefühls-Tagebuch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mein Gefühls-Tagebuch</h1>
+    </header>
+
+    <main>
+        <section class="entry-form">
+            <h2>Neuen Eintrag erstellen</h2>
+            <form>
+                <label for="date">Datum:</label>
+                <input type="date" id="date" required>
+
+                <label for="mood">Stimmung:</label>
+                <select id="mood" required>
+                    <option value="glücklich">😊 Glücklich</option>
+                    <option value="zufrieden">🙂 Zufrieden</option>
+                    <option value="neutral">😐 Neutral</option>
+                    <option value="traurig">😢 Traurig</option>
+                    <option value="wütend">😡 Wütend</option>
+                </select>
+
+                <label for="note">Notiz:</label>
+                <textarea id="note" rows="3" placeholder="Schreibe deine Gedanken auf..."></textarea>
+
+                <button type="submit">Speichern</button>
+            </form>
+        </section>
+
+        <section class="entries">
+            <h2>Vergangene Einträge</h2>
+            <div class="entry">
+                <strong>18.03.2025 - 😊 Glücklich</strong>
+                <p>Heute war ein schöner Tag. Die Sonne hat geschienen und ich habe meine Freunde getroffen.</p>
+            </div>
+            <div class="entry">
+                <strong>17.03.2025 - 😐 Neutral</strong>
+                <p>Der Tag war okay, aber nichts Besonderes.</p>
+            </div>
+            <div class="entry">
+                <strong>16.03.2025 - 😢 Traurig</strong>
+                <p>Ich fühle mich heute nicht so gut. Hoffentlich wird es morgen besser.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mein Gefühls-Tagebuch</p>
+    </footer>
+
+</body>
+</html>
