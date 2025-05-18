@@ -5,68 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mein Gefühls-Tagebuch</title>
     <link rel="stylesheet" href="styles.css">
-    <meta name="description" content="Ein digitales Tagebuch, um tägliche Stimmungen festzuhalten.">
 </head>
 <body>
-    <header>
-        <h1>Mein Gefühls-Tagebuch</h1>
-        <p class="subtitle">Reflektiere deine Emotionen, jeden Tag.</p>
-    </header>
+    <!-- Header (wird per JavaScript geladen) -->
+    <header id="header"></header>
 
+    <!-- Hauptinhalt -->
     <main>
-        <!-- Statische Beispieldaten (simulierte Einträge) -->
-        <section class="eintraege">
-            <article class="eintrag">
-                <div class="eintrag-header">
-                    <span class="datum">07. April 2025</span>
-                    <span class="stimmung glücklich">😊 Glücklich</span>
-                </div>
-                <p class="notiz">Heute war ein produktiver Tag! Habe endlich mein HTML-Projekt abgeschlossen.</p>
-            </article>
-
-            <article class="eintrag">
-                <div class="eintrag-header">
-                    <span class="datum">06. April 2025</span>
-                    <span class="stimmung neutral">😐 Neutral</span>
-                </div>
-                <p class="notiz">Ein ruhiger Sonntag. Bin gespannt auf die neue Woche.</p>
-            </article>
-
-            <article class="eintrag">
-                <div class="eintrag-header">
-                    <span class="datum">05. April 2025</span>
-                    <span class="stimmung traurig">😢 Traurig</span>
-                </div>
-                <p class="notiz">Das Wetter war schlecht, und ich habe mich ein bisschen einsam gefühlt.</p>
-            </article>
+        <!-- Container für dynamische Einträge -->
+        <section id="eintraege-container">
+            <!-- Einträge werden hier via JavaScript eingefügt -->
         </section>
 
-        <!-- Statisches Formular (ohne Funktion) -->
+        <!-- Formular für neue Einträge -->
         <section class="formular">
             <h2>Neuer Eintrag</h2>
-            <form>
+            <form id="eintrag-form">
                 <label for="datum">Datum:</label>
                 <input type="date" id="datum" name="datum" required>
 
                 <label for="stimmung">Stimmung:</label>
                 <select id="stimmung" name="stimmung" required>
+                    <option value="" disabled selected>Wähle eine Stimmung</option>
                     <option value="glücklich">😊 Glücklich</option>
                     <option value="neutral">😐 Neutral</option>
                     <option value="traurig">😢 Traurig</option>
                     <option value="wütend">😠 Wütend</option>
-                    <option value="entspannt">😌 Entspannt</option>
+                    <option value="aufgeregt">😆 Aufgeregt</option>
                 </select>
 
                 <label for="notiz">Notiz:</label>
                 <textarea id="notiz" name="notiz" placeholder="Wie fühlst du dich heute?" required></textarea>
 
-                <button type="submit" class="button">Speichern</button>
+                <button type="submit">Eintrag speichern</button>
             </form>
         </section>
     </main>
 
-    <footer>
-        <p> Mein Gefühls-Tagebuch – Marie Frech</p>
-    </footer>
+    <!-- Footer (wird per JavaScript geladen) -->
+    <footer id="footer"></footer>
+
+    <!-- JavaScript-Datei einbinden -->
+    <script src="script.js"></script>
 </body>
 </html>
