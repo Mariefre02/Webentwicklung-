@@ -18,6 +18,6 @@ Falls später weitere Funktionen ergänzt werden sollen, könnten z. B. folgende
 - Speichern der Einträge in einer Datenbank
 - Statistische Auswertung der Stimmungen über die Zeit
 
-‚4. Fazit
+4. Fazit
 Mein Gefühls-Tagebuch“ ist eine einfache, aber sinnvolle Anwendung, um Emotionen regelmäßig zu reflektieren. Die Website ermöglicht einen
 niedrigschwelligen Einstieg in HTML und Webentwicklung, da sie grundlegende Formularelemente und eine einfache Benutzeroberfläche nutzt
