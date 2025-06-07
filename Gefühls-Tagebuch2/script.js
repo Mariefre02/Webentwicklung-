@@ -28,10 +28,10 @@ function renderEintraege() {
             <p class="notiz">${eintrag.notiz}</p>
             <div class="eintrag-actions">
                 <button onclick="editEintrag(${index})">Bearbeiten</button>
-                <button onclick="deleteEintrag(${index})">Löschen</button>
+                <button onclick="deleteEintrag(${index})">Löschen</button>  
             </div>
         </article>
-    `).join('');
+    `).join(''); // Klausur addEventListener 
 }
 
 // Gibt passendes Emoji zur Stimmung zurück
@@ -39,7 +39,7 @@ function getEmoji(stimmung) {
     const emojis = { glücklich: '😊', neutral: '😐', traurig: '😢', wütend: '😠', aufgeregt: '😆'};
     return emojis[stimmung] || '';
 }
-// Neuer Eintrag
+// Neuer Eintrag (Speichert neue einträge)
 document.getElementById('eintrag-form').addEventListener('submit', (e) => {
     e.preventDefault(); // Verhindert Neuladen der Seite
     const newEintrag = {
